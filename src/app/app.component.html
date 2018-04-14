@@ -3,14 +3,15 @@
   <h1>
     Respuesta Aleatoria:
   </h1>
-</div>
-<h2>Ingresa tu pregunta: </h2>
 
-<input #textInput type="text" name="pregunta" />
-<button (click)="getAnswer()">¿Si o No?</button>
-<br/><br/> 
-<div *ngIf="answer">You ask a question: {{question}}, and the answer is: {{answer}}
+  <h2>Ingresa tu pregunta: </h2>
+
+  <input #textInput type="text" name="pregunta" />
+  <button (click)="getAnswer()">¿Si o No?</button>
   <br/>
-  <img src={{image}}/>
+  <br/>
+  <div *ngIf="answer">You ask a question: {{question}}, and the answer is: {{answer}}
+    <br/>
+    <img src={{image}}/>
+  </div>
 </div>
-
